@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import "./App.css";
+import Question from "./components/Question";
+import questions from './questions'
+
+const styles = {
+  leftBanner: {},
+};
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="modal-wrap">
+      <div className="modal-body">
+        <div className="left-banner" style={styles.leftBanner}>
+          <img className="cube" src={"./images/illustration-box-desktop.svg"} />
+        </div>
+        <div className="right-questions">
+          <h1 className='title'>FAQ</h1>
+          {questions.map(question => (
+              <Question
+              question={question.question}
+              answer={question.answer}
+            />
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

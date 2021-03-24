@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/faq-accordion-card-main
 /.pnp
 .pnp.js
 
