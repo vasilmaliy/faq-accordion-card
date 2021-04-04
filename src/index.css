@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family:'Kumbh Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+html {
+  background: linear-gradient(hsl(240, 73%, 65%), hsl(273, 75%, 66%));
+  min-height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.modal-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-body {
+  width: 920px;
+  height: 510px;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px;
+
+  border-radius: 30px;
+  background-color: #fff;
+}
+
+.left-banner {
+  position: relative;
+  background: url('http://localhost:3000/images/illustration-woman-online-desktop.svg') -85px 80px no-repeat, url('http://localhost:3000/images/bg-pattern-desktop.svg') 112% 67% no-repeat;
+  align-self: stretch;
+  width: 450px;
+  height: 100%;
+}
+
+.cube {
+  position: absolute;
+  top: 42%;
+  left: -93px;
+}
+
+.right-questions {
+  width: 450px;
+  text-align: left;
+}
+
+/* Question styles */
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  margin-bottom: .9rem;
+  font-size: 12px;
+  transition-property: font-size;
+  transition-duration: 2.3s;
+}
+
+.question-wrapper {
+  border-bottom: 1px solid #e8e8e8;
+  padding-left: 0px;
+  width: 350px;
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: 0.3s;
+}
+
+.question-wrapper:hover {
+  border-bottom-color: #e9937c;
+}
+
+.title {
+  margin: 75px 0px 50px 0px;
+}
